@@ -37,8 +37,8 @@
     "@types/react-dom": "^16.8.5"
   },
   "scripts": {
-    "star2t": "react-scripts start",
-    "build": "react-scripts build && serve -s build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "start": "npm run build",
     "start:tsc": "tsc --p tsconfig-build.json",
     "test": "react-scripts test",
