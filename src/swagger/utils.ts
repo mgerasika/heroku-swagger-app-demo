@@ -43,7 +43,7 @@ export const getJsType = (type: string) => {
 
 export const Warning = '/* This code generated with swagger-typescript-generator. Don\'t modify this file because it will be rewriten. */\n';
 export const isModelByTypeName = (name: string): boolean => {
-    return name[0] == 'I' && name.indexOf('Model') !== 0;
+    return name ? name[0] == 'I' && name.indexOf('Model') !== 0 : false;
 };
 
 export const getClassName = (key: string) => {

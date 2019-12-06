@@ -14,8 +14,8 @@ export const ApiClassesComponent: React.FC<IProps> = (props) => {
     const renderCodegen = (swaggerClass: SwaggerClassModel) => {
         return (<ApiClassDefinitionComponent swaggerClass={swaggerClass}></ApiClassDefinitionComponent>)
     };
-    const result = props.classes.map((def: SwaggerClassModel) => {
-        return <DiffComponent key={def.name} obj1={def.source} obj2={def} obj3={renderCodegen(def)}/>
+    const result = props.classes.map((def: SwaggerClassModel,index:number ) => {
+        return <DiffComponent key={index} obj1={def.source} obj2={def} obj3={renderCodegen(def)}/>
     })
 
     const renderAllClassesExport = <ApiAllClassesExportComponent classes={props.classes} />
@@ -23,13 +23,13 @@ export const ApiClassesComponent: React.FC<IProps> = (props) => {
 
     return (
         <>
-            <h5 className={'pl-3'}>Api examble for index.ts:</h5>
-            <DiffComponent key={'index.ts'} obj1={{}} obj2={{}} obj3={renderAllClassesExport}/>
+            {/* <h5 className={'pl-3'}>Api examble for index.ts:</h5>
+            <DiffComponent key={'index.ts1'} obj1={{}} obj2={{}} obj3={renderAllClassesExport}/>
             <hr/>
 
             <h5 className={'pl-3'}>Urls for all apis:</h5>
-            <DiffComponent key={'index.ts'} obj1={{}} obj2={{}} obj3={renderAllUrlsExport}/>
-            <hr/>
+            <DiffComponent key={'index.ts2'} obj1={{}} obj2={{}} obj3={renderAllUrlsExport}/>
+            <hr/> */}
 
             <h5 className={'pl-3'}>Api:</h5>
             {result}

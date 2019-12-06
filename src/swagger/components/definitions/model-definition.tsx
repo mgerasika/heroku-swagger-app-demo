@@ -21,8 +21,8 @@ export const ModelDefinitionComponent: React.FC<IProps> = (props) => {
         imports.push(`import {${types}} from \'${props.definition.parent.config.modelImportPath}\'`);
     }
 
-    const result = imports.map((val: string) => {
-        return (<div key={val}>{val};{'\n'}</div>);
+    const result = imports.map((val: string,index) => {
+        return (<div key={index}>{val};{'\n'}</div>);
     });
 
     return (
