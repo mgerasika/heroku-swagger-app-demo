@@ -1,5 +1,5 @@
 import React from 'react';
-import {SwaggerDefinitionModel, SwaggerDefinitionProperty} from '../../model/swagger-definition-model';
+// import {SwaggerDefinitionModel, SwaggerDefinitionProperty} from '../../model/swagger-definition-model';
 import {SwaggerClassModel} from '../../model';
 import {Warning} from '../../utils';
 

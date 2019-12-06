@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import {DiffComponent} from "./diff";
 import {SwaggerDefinitionModel} from "../swagger/model/swagger-definition-model";
 import {ModelDefinitionComponent} from '../swagger/components/definitions/model-definition';

@@ -14,11 +14,11 @@ export const ModelDefinitionComponent: React.FC<IProps> = (props) => {
 
     const types = props.definition.properties.map((parameter: SwaggerDefinitionProperty) => {
         return isModelByTypeName(parameter.type) ? parameter.type : undefined;
-    }).filter((filter: string | any) => !!filter && filter != props.definition.name).join(',');
+    }).filter((filter: string | any) => !!filter && filter !== props.definition.name).join(',');
 
     const imports = [];
     if (types.length) {
-        imports.push(`import {${types}} from \'${props.definition.parent.config.modelImportPath}\'`);
+        imports.push(`import {${types}} from '${props.definition.parent.config.modelImportPath}'`);
     }
 
     const result = imports.map((val: string,index) => {

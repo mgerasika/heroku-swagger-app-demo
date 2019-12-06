@@ -1,8 +1,7 @@
-import React, {ReactNode} from 'react';
+import React from 'react';
 import {DiffComponent} from "./diff";
 import {SwaggerClassModel} from "../swagger/model/swagger-class";
 import { ApiClassDefinitionComponent } from '../swagger/components/api-class';
-import {AllModelsExportComponent} from '../swagger/components/definitions';
 import {ApiAllClassesExportComponent} from '../swagger/components/api-class/api-all-class-export';
 import {ApiUrlsComponent} from '../swagger/components/urls';
 
@@ -18,8 +17,8 @@ export const ApiClassesComponent: React.FC<IProps> = (props) => {
         return <DiffComponent key={index} obj1={def.source} obj2={def} obj3={renderCodegen(def)}/>
     })
 
-    const renderAllClassesExport = <ApiAllClassesExportComponent classes={props.classes} />
-    const renderAllUrlsExport = <ApiUrlsComponent classes={props.classes} />
+    // const renderAllClassesExport = <ApiAllClassesExportComponent classes={props.classes} />
+    // const renderAllUrlsExport = <ApiUrlsComponent classes={props.classes} />
 
     return (
         <>

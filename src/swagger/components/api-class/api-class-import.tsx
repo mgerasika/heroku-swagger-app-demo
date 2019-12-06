@@ -34,7 +34,7 @@ export const ApiClassImportAdapter: React.FC<IProps> = (props) => {
 
     const result = Object.keys(unique).filter((filter: string | any) => !!filter).join(',');
     if (result.length) {
-        imports.push(`import {${result}} from \'${props.swaggerClass.parent.config.modelImportPath}\'`);
+        imports.push(`import {${result}} from '${props.swaggerClass.parent.config.modelImportPath}'`);
     }
 
     return (

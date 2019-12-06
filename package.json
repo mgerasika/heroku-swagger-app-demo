@@ -14,7 +14,6 @@
     "react-use-states": "^1.0.6",
     "reflect-metadata": "^0.1.13",
     "serve": "^11.2.0",
-    "swagger-typescript-generator": "^1.1.2",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3",
     "typescript-actions": "^1.0.10"
@@ -37,8 +36,9 @@
     "@types/react-dom": "^16.8.5"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "star2t": "react-scripts start",
+    "run1": "node src/server.js",
+    "build": "react-scripts build && node src/server.js",
     "start": "npm run build",
     "start:tsc": "tsc --p tsconfig-build.json",
     "test": "react-scripts test",
