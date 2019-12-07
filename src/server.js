@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 
-console.log(port,process.env.PORT);
+console.log('port',process.env.PORT);
 app.set('port', (process.env.PORT || 80));
 const parentDir = require('path').resolve(__dirname, '..')
 console.log('dirname='+parentDir)
