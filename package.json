@@ -2,6 +2,7 @@
   "name": "react-app",
   "version": "1.0.2",
   "description": "First description",
+  "main": "index.js",
   "react-dom": "^16.8.6",
   "engines": {
     "node": "12.13.0"
@@ -40,8 +41,8 @@
   },
   "scripts": {
     "star2t": "react-scripts start",
-    "run1": "node src/server.js",
-    "build": "node src/server.js",
+    "run1": "node index.js",
+    "build": "node index.js",
     "start": "npm run build",
     "start:tsc": "tsc --p tsconfig-build.json",
     "test": "react-scripts test",
@@ -49,5 +50,17 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
