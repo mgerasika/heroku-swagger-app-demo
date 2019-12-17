@@ -13,7 +13,7 @@ var nStore = require('nstore');
 app.set('port', (process.env.PORT || 5000));
 
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/build'));
 
 
 app.set("view options", { layout: false });
