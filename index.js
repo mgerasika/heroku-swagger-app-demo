@@ -6,11 +6,16 @@ var app = express();
 
 var fs = require('fs');
 
+var nStore = require('nstore');
+
+
 
 app.set('port', (process.env.PORT || 5000));
 
 
-app.use(express.static(__dirname + '/build'));
+app.use(express.static(__dirname + '/public'));
+
+
 app.set("view options", { layout: false });
 
 app.set('views', __dirname + '/');
